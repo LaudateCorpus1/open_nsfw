@@ -104,3 +104,4 @@ ENV/
 *.gz
 *.xz
 *.tar
+.idea/*
