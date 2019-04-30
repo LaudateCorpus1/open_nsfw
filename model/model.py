@@ -35,11 +35,6 @@ class OpenNsfwModel:
                                         shape=[None, 224, 224, 3],
                                         name="input")
             self.input_tensor = self.input
-        elif input_type == InputType.BASE64_JPEG:
-            from image_utils import load_base64_tensor
-
-            self.input = tf.placeholder(tf.string, shape=(None,), name="input")
-            self.input_tensor = load_base64_tensor(self.input)
         else:
             raise ValueError("invalid input type '{}'".format(input_type))
 
