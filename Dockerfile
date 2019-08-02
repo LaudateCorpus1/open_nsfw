@@ -6,7 +6,7 @@ ADD https://s3-us-west-2.amazonaws.com/deepai-opensource-codebases-models/openns
 
 COPY model/* ./
 
-RUN pip3 install scikit-image==0.15.0 ai-integration==1.0.7
+RUN pip3 install scikit-image==0.15.0 ai-integration==1.0.11
 
 CMD []
 ENTRYPOINT ["python3", "classify_nsfw.py"]
